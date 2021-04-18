@@ -34,3 +34,4 @@ int main (){
     deleteMap(map_head);//删除释放地图
     return 0;
 }
+//test
