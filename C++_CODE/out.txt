@@ -1,0 +1,4 @@
+work school1 station4 home2 
+school work1 station2 home9 
+station work4 school2 home1 
+home work2 school9 station1 
