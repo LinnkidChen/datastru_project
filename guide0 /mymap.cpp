@@ -18,7 +18,7 @@ map_node* mymap::create_map(int &count,QVector<map_node*> &loc_node){
     map_node * pcur;
     pcur=phead;
     QStringList name_l;
-    name_l=tempName.split(',',QString::SkipEmptyParts);
+    name_l=tempName.split(',',Qt::SkipEmptyParts);
     for(int i=0;i<name_l.size();i++){
 
         appendNode(pcur, name_l.at(i));

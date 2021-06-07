@@ -51,4 +51,5 @@ DISTFILES += \
     Image/backbutton1.png \
     Image/bupticon.png \
     Image/map.png \
-    Image/startbutton.png
+    Image/startbutton.png \
+    matrix.txt
