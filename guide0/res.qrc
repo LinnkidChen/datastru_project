@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Image/backbutton.png</file>
+        <file>Image/backbutton1.png</file>
+        <file>Image/bupt.jpg</file>
+        <file>Image/bupticon.png</file>
+        <file>Image/map.png</file>
+        <file>Image/startbutton.png</file>
+        <file>matrix.txt</file>
+    </qresource>
+</RCC>
