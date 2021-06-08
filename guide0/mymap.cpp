@@ -13,8 +13,8 @@ map_node* mymap::create_map(QString Filename){
     QFile fmatrix(":/"+Filename);
     QString tempName;//临时储存文件中读出的第一行，即地名
     //fmatrix.open("matrix.txt");
-    if(fmatrix.exists())qDebug()<<"fmatrix exists";
-    else qDebug()<<"fmatrix not exist";
+//    if(fmatrix.exists())qDebug()<<"fmatrix exists";
+//    else qDebug()<<"fmatrix not exist";
     fmatrix.open(QFile::ReadOnly);
     matrix_stream.setDevice(&fmatrix);
     matrix_stream.readLineInto(&tempName,MAX_STR_LEN);
@@ -41,7 +41,7 @@ map_node* mymap::create_map(QString Filename){
     //读入边，并生成边节点
     appendArc(phead);
     ReadInOption(1);//readinDensity
-    ReadInOption(2);
+    ReadInOption(2);//readinbicycle
     /*for(int i=0;i<place_num;i++){
     cout<<loc_name[i]<<' ';}*/
     pcur=phead->next_node;
@@ -64,6 +64,10 @@ void mymap:: appendArc(map_node * pcur_node){
     int temp_dist;//临时储存读入的距离
     for(int i=0;i<place_num;i++){
         pcur_arc=new map_arc;
+        pcur_arc->bicycle=0;
+        pcur_arc->density=0;
+        pcur_arc->distance=0;
+        pcur_arc->weight=0;
         pcur_node->next_arc=pcur_arc;
         for(int q=0;q<place_num;q++){
             matrix_stream>>temp_dist;

@@ -95,7 +95,7 @@ public:
         guidescene->setCentralWidget(centralwidget);
         menubar = new QMenuBar(guidescene);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 1200, 23));
+        menubar->setGeometry(QRect(0, 0, 1200, 22));
         guidescene->setMenuBar(menubar);
         statusbar = new QStatusBar(guidescene);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
